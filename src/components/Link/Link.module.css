@@ -1,0 +1,14 @@
+.link {
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.separator{
+    color: var(--black);
+    margin: 0 .8rem;
+}
