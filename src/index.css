@@ -10,6 +10,7 @@
     --light-gray: #BCBCBC;
     --background-gray: #C4C4C4;
     --orange: #FFCB47;
+    --orange-hover: #FDAA3E;
 }
 
 html, body {
@@ -17,7 +18,7 @@ html, body {
 }
 
 body {
-    background: url('/public/background.png') center/cover no-repeat;
+    background: url('/public//splash.png') top right/50% no-repeat,url('/public/background.png') center/cover no-repeat;
     color: var(--light-gray);
     font-family: var(--text);
     font-size: 16px;
@@ -25,20 +26,4 @@ body {
     line-height: 26px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-h1, h2, h3 {
-    color: var(--black);
-    font-family: var(--headings);
-    font-weight: 900;
-}
-
-h1, h2 {
-    font-size: 82px;
-    line-height: 95px;
-}
-
-h3 {
-    font-size: 42px;
-    line-height: 48px;
 }
