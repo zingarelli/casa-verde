@@ -1,18 +1,18 @@
 import Link from '../Link';
 import logo from './assets/logo.png';
-import styles from './Menu.module.css';
+import { Header } from './styled';
 
 export default function Menu() {
     return (
-        <header className={styles.header}>
+        <Header>
             <img src={logo} alt="logo da Casa Verde" />
-            <nav className={styles.links}>
+            <nav>
                 <Link to='#' value='Como fazer' sep='/' />
                 <Link to='#' value='Ofertas' sep='/' />
                 <Link to='#' value='Depoimentos' sep='/' />
                 <Link to='#' value='Vídeos' sep='/' />
                 <Link to='#' value='Meu carrinho' />
             </nav>
-        </header>
+        </Header>
     )
 }

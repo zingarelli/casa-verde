@@ -7,7 +7,7 @@
     --white: #FFFFFF;
     --black: #202020;
     --gray: #8D8D8D;
-    --light-gray: #BCBCBC;
+    --light-gray: rgba(32, 32, 32, 0.5);
     --background-gray: #C4C4C4;
     --orange: #FFCB47;
     --orange-hover: #FDAA3E;
@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-    background: url('/public//splash.png') top right/50% no-repeat,url('/public/background.png') center/cover no-repeat;
+    background: url('/public//splash.png') top right/50% no-repeat, rgba(0, 0, 0, 0.03) url('/public/background.png') center/cover no-repeat;
     color: var(--light-gray);
     font-family: var(--text);
     font-size: 16px;

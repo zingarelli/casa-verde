@@ -1,4 +1,4 @@
-import styles from './Link.module.css';
+import { Anchor, Separator } from './styled';
 
 interface Props {
     value: string;
@@ -10,8 +10,8 @@ interface Props {
 export default function Link({ value, sep, to}: Props) {
     return (
         <>
-            <a className={styles.link} href={to}>{value}</a>
-            {sep && <span className={styles.separator}>{sep}</span>}
+            <Anchor href={to}>{value}</Anchor>
+            {sep && <Separator>{sep}</Separator>}
         </>
     )
 }
