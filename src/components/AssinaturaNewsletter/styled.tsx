@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import background from './assets/background.png';
 import mail from './assets/mail.png';
 
+interface FormProp {
+    active: boolean;
+}
+
 export const Wrapper = styled.main`
     background: url(${background}) right/contain no-repeat;
     height: 90vh;
@@ -17,7 +21,7 @@ export const Content = styled.section`
     margin-bottom: 1.5rem;
 `
 
-export const Form = styled.form`
+export const Form = styled.form<FormProp>`
     width: 60%;
     & input, button {
         font-family: var(--text);
@@ -40,12 +44,13 @@ export const Form = styled.form`
             box-shadow: inset 0 0 5px var(--orange);
         }
     }
-    & button {    
+    & button {
         background-color: var(--orange);
         color: var(--white);
         width: 35%;
-        &:hover{
-            background-color: var(--orange-hover);
+        cursor: ${props => props.active ? 'pointer' : 'not-allowed'};
+        &:hover {
+            background-color: ${props => props.active ? 'var(--orange-hover)' : 'var(--light-gray)'};
         }
     }
 `
