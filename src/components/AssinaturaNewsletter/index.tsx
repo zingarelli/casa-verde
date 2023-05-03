@@ -18,7 +18,7 @@ export default function AssinaturaNewsletter() {
 
     const enviaFormulario = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ${email}`)
+        alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ${email}`);
     }
 
     return(
