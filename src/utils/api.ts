@@ -9,7 +9,7 @@ export default async function getProducts(): Promise<Product[] | null> {
         return data;
     }
     catch (err) {
-        console.log(err);
+        console.log('API error!\n' + err);
         return null;
     }         
 }
